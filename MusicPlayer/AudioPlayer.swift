@@ -23,10 +23,6 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate, ObservableObject {
         }
     }
     
-    override init() {
-        isPlaying = false
-    }
-    
     func initPlayback() {
         let song = songs[songNum]
         let sound = Bundle.main.path(forResource: song.fileName(), ofType: song.fileExtension())
