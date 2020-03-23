@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4AEDEAE124237616006AC8D2 /* brahms.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4AEDEAE024237616006AC8D2 /* brahms.m4a */; };
 		4AEDEAE32424A56C006AC8D2 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDEAE22424A56C006AC8D2 /* AudioPlayer.swift */; };
+		4AEDEAE524285905006AC8D2 /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDEAE424285905006AC8D2 /* MusicPlayerView.swift */; };
 		4AFABDE724234EC80079A3FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFABDE624234EC80079A3FF /* AppDelegate.swift */; };
 		4AFABDE924234EC80079A3FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFABDE824234EC80079A3FF /* SceneDelegate.swift */; };
 		4AFABDEB24234EC80079A3FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFABDEA24234EC80079A3FF /* ContentView.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		4AEDEAE024237616006AC8D2 /* brahms.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = brahms.m4a; path = ../../../../../Downloads/brahms.m4a; sourceTree = "<group>"; };
 		4AEDEAE22424A56C006AC8D2 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		4AEDEAE424285905006AC8D2 /* MusicPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerView.swift; sourceTree = "<group>"; };
 		4AFABDE324234EC80079A3FF /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFABDE624234EC80079A3FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AFABDE824234EC80079A3FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				4AFABDE624234EC80079A3FF /* AppDelegate.swift */,
 				4AFABDE824234EC80079A3FF /* SceneDelegate.swift */,
 				4AFABDEA24234EC80079A3FF /* ContentView.swift */,
+				4AEDEAE424285905006AC8D2 /* MusicPlayerView.swift */,
 				4AFABDFA24234F7D0079A3FF /* Extension.swift */,
 				4AEDEAE22424A56C006AC8D2 /* AudioPlayer.swift */,
 				4AFABDEC24234ED00079A3FF /* Assets.xcassets */,
@@ -171,6 +174,7 @@
 				4AFABDE724234EC80079A3FF /* AppDelegate.swift in Sources */,
 				4AFABDE924234EC80079A3FF /* SceneDelegate.swift in Sources */,
 				4AEDEAE32424A56C006AC8D2 /* AudioPlayer.swift in Sources */,
+				4AEDEAE524285905006AC8D2 /* MusicPlayerView.swift in Sources */,
 				4AFABDEB24234EC80079A3FF /* ContentView.swift in Sources */,
 				4AFABDFB24234F7D0079A3FF /* Extension.swift in Sources */,
 			);
