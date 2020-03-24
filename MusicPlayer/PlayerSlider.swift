@@ -15,8 +15,10 @@ struct PlayerSlider: View {
         VStack {
             HStack {
                 Text("\(self.currentPlayerTime.toTimeString())")
+                    .foregroundColor(.white)
                 Spacer()
                 Text("\(self.player.songDuration.toTimeString())")
+                    .foregroundColor(.white)
             }
             HStack {
                 GeometryReader { geometry in

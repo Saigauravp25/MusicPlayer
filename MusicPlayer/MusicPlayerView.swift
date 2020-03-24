@@ -11,12 +11,18 @@ import AVKit
 
 struct MusicPlayerView: View {
     @EnvironmentObject var audioPlayer: AudioPlayer
-    @State var songs = ["bach.mp3", "beethoven.mp3", "chopin.wav", "brahms.mp3"]
+    @State var songs: [String]
+    @State var songNum: Int
     var body: some View {
         ZStack {
             Color.backgroundColor
                 .edgesIgnoringSafeArea(.all)
             VStack {
+                Image("cover-note")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(10)
+                    .padding(.all)
                 HStack {
                     Text("\(self.songs[self.audioPlayer.songNum].fileName().capitalized)")
                         .font(.system(size: 45))
@@ -30,7 +36,9 @@ struct MusicPlayerView: View {
         }
         .onAppear {
             self.audioPlayer.songs = self.songs
+            self.audioPlayer.songNum = self.songNum
             self.audioPlayer.initPlayback()
+            self.audioPlayer.startPlayback()
         }
     }
 }

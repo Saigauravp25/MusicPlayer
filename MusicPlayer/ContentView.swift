@@ -11,8 +11,11 @@ import AVKit
 
 struct ContentView: View {
     @EnvironmentObject var audioPlayer: AudioPlayer
+    @State var songs = ["bach.mp3", "beethoven.mp3", "chopin.wav", "brahms.mp3"]
     var body: some View {
-        MusicPlayerView()
+        ZStack {
+            SongListView(songs: self.songs).environmentObject(self.audioPlayer)
+        }
     }
 }
 
