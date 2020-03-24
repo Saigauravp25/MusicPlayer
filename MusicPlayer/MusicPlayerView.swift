@@ -10,8 +10,8 @@ import SwiftUI
 import AVKit
 
 struct MusicPlayerView: View {
-    @ObservedObject var audioPlayer = AudioPlayer()
-    @State var songs = ["bach.mp4", "beethoven.mp3", "chopin.wav", "brahms.m4a"]
+    @EnvironmentObject var audioPlayer: AudioPlayer
+    @State var songs = ["bach.mp3", "beethoven.mp3", "chopin.wav", "brahms.mp3"]
     var body: some View {
         ZStack {
             Color.backgroundColor
@@ -23,44 +23,9 @@ struct MusicPlayerView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.buttonColor)
                 }
-                HStack {
-                    Text("\(TimeInterval(self.audioPlayer.currentTimeInTrack()).toString())")
-                        .padding(.leading)
-                    Spacer()
-                    Text("\(TimeInterval(self.audioPlayer.trackDuration()).toString())")
-                        .padding(.trailing)
-                }
-                HStack {
-                    Slider(value: $audioPlayer.player.currentTime, in: 0.0...self.audioPlayer.trackDuration())
-                        .padding(.horizontal)
-                }
-                HStack {
-                    Spacer()
-                    Button(action: {self.audioPlayer.previousTrack()}, label: {
-                        Image(systemName: "backward.fill")
-                            .resizable()
-                            .frame(width: 75, height: 50)
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundColor(.buttonColor)
-                    })
-                    Spacer()
-                    Button(action: {self.audioPlayer.playPauseTrack()}, label: {
-                        Image(systemName: "\(self.audioPlayer.isPlaying ? "pause" : "play").fill")
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundColor(.buttonColor)
-                    })
-                    Spacer()
-                    Button(action: {self.audioPlayer.nextTrack()}, label: {
-                        Image(systemName: "forward.fill")
-                            .resizable()
-                            .frame(width: 75, height: 50)
-                            .aspectRatio(contentMode: .fit)
-                            .foregroundColor(.buttonColor)
-                    })
-                    Spacer()
-                }
+                PlayerSlider()
+                    .padding(.horizontal)
+                PlayerControls()
             }
         }
         .onAppear {
@@ -69,3 +34,4 @@ struct MusicPlayerView: View {
         }
     }
 }
+

@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AEDEAE124237616006AC8D2 /* brahms.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4AEDEAE024237616006AC8D2 /* brahms.m4a */; };
+		4AEDEAE124237616006AC8D2 /* brahms.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AEDEAE024237616006AC8D2 /* brahms.mp3 */; };
 		4AEDEAE32424A56C006AC8D2 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDEAE22424A56C006AC8D2 /* AudioPlayer.swift */; };
 		4AEDEAE524285905006AC8D2 /* MusicPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDEAE424285905006AC8D2 /* MusicPlayerView.swift */; };
+		4AEDEAE7242990A2006AC8D2 /* PlayerSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDEAE6242990A2006AC8D2 /* PlayerSlider.swift */; };
+		4AEDEAE92429A15A006AC8D2 /* PlayerControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEDEAE82429A15A006AC8D2 /* PlayerControls.swift */; };
 		4AFABDE724234EC80079A3FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFABDE624234EC80079A3FF /* AppDelegate.swift */; };
 		4AFABDE924234EC80079A3FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFABDE824234EC80079A3FF /* SceneDelegate.swift */; };
 		4AFABDEB24234EC80079A3FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFABDEA24234EC80079A3FF /* ContentView.swift */; };
@@ -19,13 +21,15 @@
 		4AFABDFB24234F7D0079A3FF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFABDFA24234F7D0079A3FF /* Extension.swift */; };
 		4AFABDFF24235D940079A3FF /* beethoven.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AFABDFC24235D930079A3FF /* beethoven.mp3 */; };
 		4AFABE0024235D940079A3FF /* chopin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4AFABDFD24235D930079A3FF /* chopin.wav */; };
-		4AFABE0124235D940079A3FF /* bach.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4AFABDFE24235D930079A3FF /* bach.mp4 */; };
+		4AFABE0124235D940079A3FF /* bach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AFABDFE24235D930079A3FF /* bach.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4AEDEAE024237616006AC8D2 /* brahms.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = brahms.m4a; path = ../../../../../Downloads/brahms.m4a; sourceTree = "<group>"; };
+		4AEDEAE024237616006AC8D2 /* brahms.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = brahms.mp3; path = ../../../../../Downloads/brahms.mp3; sourceTree = "<group>"; };
 		4AEDEAE22424A56C006AC8D2 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		4AEDEAE424285905006AC8D2 /* MusicPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerView.swift; sourceTree = "<group>"; };
+		4AEDEAE6242990A2006AC8D2 /* PlayerSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSlider.swift; sourceTree = "<group>"; };
+		4AEDEAE82429A15A006AC8D2 /* PlayerControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControls.swift; sourceTree = "<group>"; };
 		4AFABDE324234EC80079A3FF /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFABDE624234EC80079A3FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AFABDE824234EC80079A3FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +41,7 @@
 		4AFABDFA24234F7D0079A3FF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		4AFABDFC24235D930079A3FF /* beethoven.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = beethoven.mp3; path = ../../../../../Downloads/beethoven.mp3; sourceTree = "<group>"; };
 		4AFABDFD24235D930079A3FF /* chopin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = chopin.wav; path = ../../../../../Downloads/chopin.wav; sourceTree = "<group>"; };
-		4AFABDFE24235D930079A3FF /* bach.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = bach.mp4; path = ../../../../../Downloads/bach.mp4; sourceTree = "<group>"; };
+		4AFABDFE24235D930079A3FF /* bach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bach.mp3; path = ../../../../../Downloads/bach.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,20 +74,22 @@
 		4AFABDE524234EC80079A3FF /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				4AEDEAE024237616006AC8D2 /* brahms.m4a */,
-				4AFABDFE24235D930079A3FF /* bach.mp4 */,
+				4AEDEAE024237616006AC8D2 /* brahms.mp3 */,
+				4AFABDFE24235D930079A3FF /* bach.mp3 */,
 				4AFABDFC24235D930079A3FF /* beethoven.mp3 */,
 				4AFABDFD24235D930079A3FF /* chopin.wav */,
 				4AFABDE624234EC80079A3FF /* AppDelegate.swift */,
 				4AFABDE824234EC80079A3FF /* SceneDelegate.swift */,
 				4AFABDEA24234EC80079A3FF /* ContentView.swift */,
 				4AEDEAE424285905006AC8D2 /* MusicPlayerView.swift */,
+				4AEDEAE6242990A2006AC8D2 /* PlayerSlider.swift */,
 				4AFABDFA24234F7D0079A3FF /* Extension.swift */,
 				4AEDEAE22424A56C006AC8D2 /* AudioPlayer.swift */,
 				4AFABDEC24234ED00079A3FF /* Assets.xcassets */,
 				4AFABDF124234ED00079A3FF /* LaunchScreen.storyboard */,
 				4AFABDF424234ED00079A3FF /* Info.plist */,
 				4AFABDEE24234ED00079A3FF /* Preview Content */,
+				4AEDEAE82429A15A006AC8D2 /* PlayerControls.swift */,
 			);
 			path = MusicPlayer;
 			sourceTree = "<group>";
@@ -154,10 +160,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AEDEAE124237616006AC8D2 /* brahms.m4a in Resources */,
+				4AEDEAE124237616006AC8D2 /* brahms.mp3 in Resources */,
 				4AFABDF324234ED00079A3FF /* LaunchScreen.storyboard in Resources */,
 				4AFABDF024234ED00079A3FF /* Preview Assets.xcassets in Resources */,
-				4AFABE0124235D940079A3FF /* bach.mp4 in Resources */,
+				4AFABE0124235D940079A3FF /* bach.mp3 in Resources */,
 				4AFABDED24234ED00079A3FF /* Assets.xcassets in Resources */,
 				4AFABDFF24235D940079A3FF /* beethoven.mp3 in Resources */,
 				4AFABE0024235D940079A3FF /* chopin.wav in Resources */,
@@ -171,11 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AEDEAE92429A15A006AC8D2 /* PlayerControls.swift in Sources */,
 				4AFABDE724234EC80079A3FF /* AppDelegate.swift in Sources */,
 				4AFABDE924234EC80079A3FF /* SceneDelegate.swift in Sources */,
 				4AEDEAE32424A56C006AC8D2 /* AudioPlayer.swift in Sources */,
 				4AEDEAE524285905006AC8D2 /* MusicPlayerView.swift in Sources */,
 				4AFABDEB24234EC80079A3FF /* ContentView.swift in Sources */,
+				4AEDEAE7242990A2006AC8D2 /* PlayerSlider.swift in Sources */,
 				4AFABDFB24234F7D0079A3FF /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

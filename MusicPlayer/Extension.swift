@@ -9,7 +9,6 @@
 import SwiftUI
 
 extension Color {
-    
     static func rgb(r: Double, g: Double, b: Double) -> Color {
         return Color(red: r / 255, green: g / 255, blue: b / 255)
     }
@@ -19,7 +18,6 @@ extension Color {
 }
 
 extension String {
-    
     func fileName() -> String {
         return URL(fileURLWithPath: self).deletingPathExtension().lastPathComponent
     }
@@ -29,9 +27,8 @@ extension String {
     }
 }
 
-extension TimeInterval {
-    
-    func toString() -> String {
+extension Double {
+    func toTimeString() -> String {
         let time = NSInteger(self)
         let seconds = time % 60
         let minutes = (time / 60) % 60

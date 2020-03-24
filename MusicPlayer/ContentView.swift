@@ -10,6 +10,7 @@ import SwiftUI
 import AVKit
 
 struct ContentView: View {
+    @EnvironmentObject var audioPlayer: AudioPlayer
     var body: some View {
         MusicPlayerView()
     }
@@ -17,6 +18,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(AudioPlayer())
     }
 }
