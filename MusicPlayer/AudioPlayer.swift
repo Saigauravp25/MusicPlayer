@@ -18,7 +18,7 @@ class AudioPlayer: AVPlayer, ObservableObject {
     var songs: [String]!
     var isPlaying: Bool = false
     private var timeObserverToken: Any?
-    var currentTimeInSecondsPass: AnyPublisher<Double, Never>  {
+    var currentTimeInSecondsPassed: AnyPublisher<Double, Never>  {
         return $currentTimeInSeconds
             .eraseToAnyPublisher()
     }

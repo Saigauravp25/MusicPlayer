@@ -21,7 +21,7 @@ struct PlayerSlider: View {
             HStack {
                 GeometryReader { geometry in
                     Slider(value: self.$currentPlayerTime, in: 0.0...self.player.songDuration)
-                        .onReceive(self.player.currentTimeInSecondsPass) { _ in
+                        .onReceive(self.player.currentTimeInSecondsPassed) { _ in
                             self.currentPlayerTime = self.player.currentTimeInSeconds
                         }
                         .gesture(DragGesture(minimumDistance: 0)
